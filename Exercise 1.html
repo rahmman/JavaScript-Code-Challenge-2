@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 4</title>
+ Write a JavaScript function that reverse a number
+  <br />
+
+</head>
+<body>
+  Type the number you want to reverse:  <input type="number" id="num"> <br />
+  <button onclick="reverseNumber()">Reverse Number</button>
+<p id="ram">
+
+</p>
+  <script>
+
+
+ function reverseNumber() {
+var userInput = document.getElementById("num").value
+  var jam= userInput.toString().split('').reverse().join("")
+
+ document.getElementById("ram").innerHTML=jam
+ }
+
+  </script>
+</body>
+</html>

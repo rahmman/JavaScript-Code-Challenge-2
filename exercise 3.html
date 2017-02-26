@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 4</title>
+Write a JavaScript function that returns a passed string with letters in alphabetical<br /> order. Go to the editor
+ <b>Example string : 'webmaster'</b><br />
+<b>Expected Output : 'abeemrstw'</b><br />
+
+</head>
+<body>
+  Type the string: <input type="text" id="str" />
+  <button onclick="sortString()">Sort String</button>
+  <p>
+    Expected Output: <span id="ch"></span>
+  </p>
+  
+<h3>Solution : </h3>
+  <script>
+function sortString(){
+var userInput= document.getElementById("str").value
+var result= userInput.split("").sort().join("")
+document.getElementById("ch").innerHTML=result
+
+
+
+}
+  </script>
+</body>
+</html>

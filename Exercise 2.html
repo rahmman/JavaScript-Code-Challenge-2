@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 4</title>
+Write a JavaScript function that generates all combinations of a string. <br />
+<b>Example string : 'dog' </b> <br />
+<b>Expected Output : d,do,dog,o,og,</b>
+
+</head>
+<body>
+  Type the string for comnination <input type="text" id="num"/>
+
+  <button onclick="stringComb()">String Combination</button>
+<h3 id="ch">Solution : </h3>
+  <script>
+  function stringComb() {
+  var str= document.getElementById('num').value
+  var tempArr = []
+  for (var i = 0; i < str.length; i++) {
+  for (var j = i+1; j < str.length + 1; j++) {
+  tempArr.push(str.slice(i, j))
+  }
+  }
+
+  document.getElementById("ch").innerHTML=tempArr.join()
+  }
+
+  </script>
+</body>
+</html>
